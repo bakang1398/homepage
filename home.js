@@ -6,13 +6,26 @@ logo.textContent = 'TASK & TIME';
 
 const menuBar = document.createElement('ul');
 menuBar.classList.add('menu');
-const homeTab = document.createElement('li')
-const toDo = document.createElement('li');
-const calender = document.createElement('li');
 
-homeTab.textContent = 'HOME';
-toDo.textContent = 'TO DO';
-calender.textContent = 'CALENDER';
+const homeTab = document.createElement('li')
+const home = document.createElement('a');
+home.setAttribute('href', 'home.html');
+
+const toDo = document.createElement('li');
+const list = document.createElement('a');
+list.setAttribute('href', 'index.html');
+
+const calender = document.createElement('li');
+const cal = document.createElement('a');
+cal.setAttribute('href', '#');
+
+home.textContent = 'HOME';
+list.textContent = 'TO DO';
+cal.textContent = 'CALENDER';
+
+homeTab.appendChild(home);
+toDo.appendChild(list);
+calender.appendChild(cal);
 
 menuBar.appendChild(logo);
 menuBar.appendChild(homeTab);
