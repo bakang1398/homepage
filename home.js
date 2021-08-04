@@ -36,7 +36,7 @@ navBar.appendChild(menuBar);
 
 let bannerImg = document.createElement('img');
 bannerImg.classList.add('banner');
-bannerImg.src = 'images/planning.jpg';
+bannerImg.src = 'planning.jpg';
 
 document.body.appendChild(bannerImg);
 
